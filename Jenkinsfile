@@ -3,10 +3,10 @@ agent any
 stages {
 stage('Build') {
 steps {
-bat 'javac Hello.java'}}
+bat 'javac HelloWorld.java'}}
 stage('Test') {
 steps {
-bat 'java Hello'}}
+bat 'java HelloWorld'}}
 stage('Archive') {
 steps {
 archiveArtifacts artifacts: '*.class', fingerprint: true
